@@ -1,0 +1,537 @@
+@import url('https://fonts.googleapis.com/css2?family=Montez&family=Montserrat:wght@400;700&family=Quicksand:wght@500;700&display=swap');
+
+* {
+    font-family: 'Montserrat';
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    transition: .2s linear ;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+}
+header {
+  height: 90px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(238, 237, 237);
+  padding: 0 15%;
+  position: fixed;
+}
+
+.navigasi {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 100px;
+}
+
+.nav-icon {
+    display: none;
+    
+}
+nav > ul > li > a {
+    text-decoration: none;
+    color: darkgreen;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: 0.2s;
+    margin: 0 5px;
+}
+
+nav > ul > li > a:hover {
+  color:darkgreen;
+  font-weight: bold;
+  transition: 1s;
+}
+
+nav > ul > li > a.active {
+  color:white;
+  background-color: darkgreen;
+}
+nav ul{
+    list-style: none;
+    display: flex; 
+}
+
+main {
+  width: 100vw;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+}
+.content-judul {
+    width: 100%;
+    height: 80vh;
+    background: url(img/gelombang.png) 100% 100% no-repeat;
+    background-size: contain;
+    background-color: rgb(236, 245, 225);
+    z-index: -100;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 90px;
+  }
+
+  .menu-content {
+    width: 90vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+    padding: 0 10%;
+  }
+
+  .content-description {
+     width: 50%;
+     overflow: hidden;
+  }
+ 
+
+  .content-description h1 {
+    font-size: 50px;
+    margin-block: 1rem;
+    color: darkgreen;
+  }
+
+  .content-description p {
+    line-height: 1.7rem;
+    font-size: 1.2rem;
+  }
+
+button {
+  border-radius: 30px 30px 30px 30px;
+  background-color: darkgreen;
+  color: white;
+  padding: 10px;
+}
+
+  @media screen and (max-width: 985px){
+    .content-description {
+      width: 55%;
+    
+   }
+   .content-description h1 {
+    font-size: 35px;
+  }
+  
+
+  }
+
+  .content-image {
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .content-image img {
+    margin: auto;
+    min-width: 100px;
+    max-width: 350px;
+  }
+ 
+
+  /* AWAL ARTICLE */
+  .content-article{
+    width: 100%;
+    /* height: 60vh; */
+    /* background: url(img/gelombang3.png) 50% 100% no-repeat; */
+    background-size: contain;
+    /* background-color: rgb(236, 245, 225); */
+    z-index: -100;
+    object-fit: cover;
+    object-position: center;
+  }
+
+  .judul-alur  {
+    color: darkgreen;
+    margin-top: 5rem;
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+
+.article1 {
+  margin: auto;
+  padding: 0 0 2px 0;
+}
+
+  .alur {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    width: 70%;
+    margin: auto;
+  }
+  .alur1 {
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+    
+  }
+
+  .alur-kiri{
+    /* width: 30%; */
+    /* background-color: blueviolet; */
+  }
+  .alur-kiri > img{
+        max-width: 250px;
+      }
+  .alur-tengah{
+    /* width: 60%; */
+  }
+  .alur-tengah h3 {
+    padding-bottom: 40px;
+    color: darkgreen;
+  }
+  
+  .alur-kanan{
+    width: 20%;
+  }
+
+
+  .alur2 {
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+  }
+
+  .alur-kiri2{
+    width: 20%;
+  }
+  .alur-kanan2 > img{
+    max-width: 250px;
+  
+      }
+  .alur-tengah2 h3 {
+    padding-bottom: 40px;
+color: darkgreen;
+    /* width: 60%; */
+  }
+  
+  .alur-kanan2{
+    /* width: 30%; */
+  }
+  .alur3 {
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+    margin: auto;
+  }
+  .alur-image img {
+    width: 200px;
+    min-width: 150px;
+    
+  }
+
+  .content-alur {
+    width: 50%;
+  }
+
+  @media screen and (max-width: 1024px) {
+    .alur {
+      gap: 7rem;
+  }
+  
+  .alur1 {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+  
+    .alur-tengah >h3 {
+      text-align: center;
+    }
+     .alur-tengah >p {
+      text-align: center;
+    }
+  
+  
+    .alur2 {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      
+    }
+    .alur-kanan2{
+      order: -1;
+    }
+  
+    .alur-tengah2 >h3 {
+      text-align: center;
+    }
+     .alur-tengah2 >p {
+      text-align: center;
+    }
+    .alur3 {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+  .alur-kosong{
+    display: none;
+  }
+  
+  .syarat {
+    flex-direction: column;
+
+  }
+
+  }
+
+  /* AKHIR ALUR */
+
+/* AWAL SYARAT */
+
+.bg-article2 {
+  
+}
+.article2 {
+  margin-bottom: 70px;
+}
+
+.judul-syarat {
+  text-align: center;
+  height: 100px;
+  
+}
+
+.judul-syarat h1 {
+  margin-top: 10rem;
+  padding-top: 2rem;
+}
+.syarat {
+  
+  text-align: center;
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.syarat1 {
+  width: 200px;
+}
+.syarat2 {
+  width: 200px;
+}
+.syarat3 {
+  width: 200px;
+}
+.syarat4 {
+  width: 200px;
+}
+
+
+.article2 img {
+  width: 50px;
+  transition: .7s;
+  
+  
+}
+
+.bg-article {
+  display: block;
+}
+
+.box1 {
+  width: 100px;
+  height: 100px;
+  border-radius: 100px;
+  margin: auto;
+  display: block;
+  background-color: aliceblue;
+}
+
+.box1:hover img {
+  transform: scale(1.1);
+}
+.syarat-content {
+margin-top: 20px;
+}
+
+  /* AKHIR ARTICLE */
+/* AWAL ASIDE */
+aside .box-aside {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: .5rem;
+}
+
+aside .box-aside .box-admin {
+  border-radius: .5rem;
+  margin: 0 0 50px 0;
+  text-align: center;
+}
+
+aside .box-aside .judul-admin {
+  margin: 50px 0 0px 0;
+}
+
+aside .box-aside .box-admin img {
+  border-radius: 10px;
+  max-width: 200px;
+  margin: 30px 0 10px 0;
+}
+
+.follow {
+  padding-top: 20px;
+}
+
+.icon-sosmed {
+  
+}
+.icon-sosmed i{
+font-size: 25px;
+color: darkgreen;
+margin: 10px 0 0 0;
+padding: 0 5px 0 5px;
+}
+
+.icon-sosmed i:hover {
+  font-size: 30px;
+color:blueviolet;
+transition: 1s;
+}
+
+/* AKHIR ASIDE */
+
+
+  /* AWAL FOOTER */
+.copyright {
+  text-align: center;
+  width: 100%;
+  padding: 50px 0 50px 0;
+  margin-top: 5px;
+}
+  /* AKHIR FOOTER */
+
+
+/* AKHIR UKURAN PC */
+
+/* AWAL UKURAN TABLET */
+
+
+@media screen and (max-width: 768px) {
+    
+    header {
+      padding: 0 5%;
+    }
+    .menu-content {
+      padding: 0 5%;
+      justify-content: center;
+    }
+
+    .content-image img {
+      max-width: 250px;
+    }
+.logo img {
+        z-index: 3;
+    }
+.navigasi {
+  /* display: none; */
+    position: absolute;
+    background-color: rgb(238, 237, 237);
+    width: 100%;
+    height: 0;
+    left: 0;
+    right: 0;
+    top: 90px;
+    transition: 1s;
+    overflow: hidden;
+}
+
+.navigasi ul {
+  display: block;
+  width: fit-content;
+  margin: 0px auto 0 auto;
+  
+  text-align: center;
+  transition: 0.5s;
+  opacity: 0;
+}
+
+.navigasi ul li {
+padding: 10px 25px ;
+}
+
+.nav-icon {
+  z-index: 1000;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    color: darkgreen;
+}
+
+.slide {
+    height: 40vh;
+    
+}
+
+.navigasi ul {
+  opacity: 1;
+}
+
+.content-judul {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    
+}
+
+.menu-content {
+    flex: 1;
+    flex-direction: column;
+    width: fit-content;
+    
+}
+.content-description h1 {
+  font-size: 30px;
+
+}
+main .content-judul .menu-content .content-image {
+order: -1;
+}
+
+.judul-utama {
+    font-size: 2.5rem;
+    
+    max-width: 100%;
+  }
+
+
+
+.box1 {
+  flex-wrap: wrap;
+}
+
+}
+
+/* AKHIR UKURAN TABLET */
