@@ -152,7 +152,12 @@ button {
   }
  
 
-  /* AWAL ARTICLE */
+  /* AWAL ARTICLE ALUR */
+
+  h2 {
+    color: darkgreen;
+  }
+
   .content-article{
     width: 100%;
     /* height: 60vh; */
@@ -162,6 +167,12 @@ button {
     z-index: -100;
     object-fit: cover;
     object-position: center;
+  }
+
+  .bg-article1 {
+    background: url(img/bg2.svg) no-repeat;
+    background-size: cover;
+    padding-bottom: 50px;
   }
 
   .judul-alur  {
@@ -192,16 +203,11 @@ button {
     
   }
 
-  .alur-kiri{
-    /* width: 30%; */
-    /* background-color: blueviolet; */
-  }
+ 
   .alur-kiri > img{
         max-width: 250px;
       }
-  .alur-tengah{
-    /* width: 60%; */
-  }
+
   .alur-tengah h3 {
     padding-bottom: 40px;
     color: darkgreen;
@@ -230,12 +236,10 @@ button {
   .alur-tengah2 h3 {
     padding-bottom: 40px;
 color: darkgreen;
-    /* width: 60%; */
+    
   }
   
-  .alur-kanan2{
-    /* width: 30%; */
-  }
+  
   .alur3 {
     display: flex;
     gap: 4rem;
@@ -308,7 +312,9 @@ color: darkgreen;
 /* AWAL SYARAT */
 
 .bg-article2 {
-  
+    background: url(img/bg2.svg) no-repeat;
+    background-size: cover;
+    padding-bottom: 300px;
 }
 .article2 {
   margin-bottom: 70px;
@@ -316,11 +322,11 @@ color: darkgreen;
 
 .judul-syarat {
   text-align: center;
-  height: 100px;
+  height: 300px;
   
 }
 
-.judul-syarat h1 {
+.judul-syarat h2 {
   margin-top: 10rem;
   padding-top: 2rem;
 }
@@ -400,23 +406,36 @@ aside .box-aside .box-admin img {
   margin: 30px 0 10px 0;
 }
 
-.follow {
-  padding-top: 20px;
+.nama {
+  color: green;
+}
+.nama .nama-1 {
+  font-weight: bolder;
+}
+.nama .nama-2 {
+  font-weight:bold;
 }
 
-.icon-sosmed {
-  
+.follow {
+  padding-top: 20px;
+  color: rgb(4, 162, 4);
 }
-.icon-sosmed i{
+.icon-sosmed li{
+list-style: none;
 font-size: 25px;
-color: darkgreen;
-margin: 10px 0 0 0;
+display: inline;
 padding: 0 5px 0 5px;
 }
 
-.icon-sosmed i:hover {
+.icon-sosmed li a {
+  margin: 10px 0 0 0;
+  text-decoration: none;
+  color: darkolivegreen;
+}
+
+.icon-sosmed li a:hover {
   font-size: 30px;
-color:blueviolet;
+  color: darkgreen;
 transition: 1s;
 }
 
