@@ -394,6 +394,10 @@ margin-top: 20px;
 /* AWAL ASIDE */
 
 aside {
+  width: 100%;
+    background: url(img/bg-alur1.svg) 100% no-repeat;
+    background-size: cover;
+    /* background-color:rgb(231, 250, 220); */
   background-color: rgb(219, 245, 216);
 }
 aside .box-aside {
