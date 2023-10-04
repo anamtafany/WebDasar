@@ -174,21 +174,21 @@ button a {
   }
 
   .bg-article1 {
-    background: url(img/bg2.svg) no-repeat;
+    background: url(img/bg-alur.svg) no-repeat;
     background-size: cover;
-    padding-bottom: 50px;
+    background-color:rgb(231, 250, 220);
   }
 
   .judul-alur  {
     color: darkgreen;
-    margin-top: 5rem;
+    padding-top: 5rem;
     text-align: center;
     margin-bottom: 5rem;
   }
 
 .article1 {
   margin: auto;
-  padding: 0 0 2px 0;
+  padding: 0 0 100px 0;
 }
 
   .alur {
@@ -304,10 +304,8 @@ color: darkgreen;
     display: none;
   }
   
-  .syarat {
-    flex-direction: column;
 
-  }
+
 
   }
 
@@ -316,17 +314,25 @@ color: darkgreen;
 /* AWAL SYARAT */
 
 .bg-article2 {
-    background: url(img/bg2.svg) no-repeat;
+    background: url(img/bg-syarat.svg) no-repeat;
     background-size: cover;
-    padding-bottom: 300px;
-}
-.article2 {
-  margin-bottom: 70px;
+    background-color: aliceblue;
 }
 
+@media screen and (max-width: 1024px) {
+  .bg-article2 {
+    background: url(img/bg-syarat-tablet.svg) no-repeat;
+    background-size: cover;
+    background-color: aliceblue;
+}
+  .syarat {
+    flex-direction: column;
+
+  }
+}
 .judul-syarat {
   text-align: center;
-  height: 300px;
+  height: 100px;
   
 }
 
@@ -335,7 +341,7 @@ color: darkgreen;
   padding-top: 2rem;
 }
 .syarat {
-  
+  padding-bottom: 100px;
   text-align: center;
   display: flex;
   gap: 3rem;
@@ -374,7 +380,7 @@ color: darkgreen;
   border-radius: 100px;
   margin: auto;
   display: block;
-  background-color: aliceblue;
+  /* background-color: rgb(213, 85, 175); */
 }
 
 .box1:hover img {
@@ -389,6 +395,10 @@ margin-top: 20px;
 
 
 /* AWAL ASIDE */
+
+aside {
+  background-color: rgb(219, 245, 216);
+}
 aside .box-aside {
   display: flex;
   flex-direction: column;
@@ -451,6 +461,10 @@ transition: 1s;
 
 
   /* AWAL FOOTER */
+
+  footer {
+    background-color: rgb(4, 206, 41);
+  }
 .copyright {
   text-align: center;
   width: 100%;
@@ -575,12 +589,25 @@ padding: 10px 25px ;
 }
 
 
+.bg-article1 {
+  background: url(img/bg-alur-mobile.svg) no-repeat;
+  background-size: cover;
+  /* padding-bottom: 50px; */
+}
+
 .alur-kiri > img {
     max-width: 200px;
 }
 .alur-kanan2 > img {
     max-width: 200px;
 }
+
+.bg-article2 {
+  background: url(img/bg-syarat-mobile.svg) no-repeat;
+  background-size: cover;
+  background-color: aliceblue;
+}
+
 
 }
 /* AKHIR UKURAN MOBILE */
