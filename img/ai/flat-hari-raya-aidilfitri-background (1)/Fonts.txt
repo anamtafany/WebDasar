@@ -1,0 +1,9 @@
+Fonts used in this design:
+
+Font: Oleo Script
+Author: soytutype fonts
+Url: https://fonts.google.com/specimen/Oleo+Script
+
+Font: Comfortaa
+Author: Johan Aakerlund,Cyreal
+Url: https://fonts.google.com/specimen/Comfortaa
