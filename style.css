@@ -119,11 +119,15 @@ main {
     font-size: 1.2rem;
   }
 
-button {
+button{
   border-radius: 30px 30px 30px 30px;
   background-color: darkgreen;
-  color: white;
   padding: 10px;
+  margin-top: 20px;
+}
+
+button a {
+  color: white;
 }
 
   @media screen and (max-width: 985px){
@@ -380,7 +384,10 @@ color: darkgreen;
 margin-top: 20px;
 }
 
-  /* AKHIR ARTICLE */
+/* AKHIR ARTICLE */
+
+
+
 /* AWAL ASIDE */
 aside .box-aside {
   display: flex;
@@ -420,6 +427,7 @@ aside .box-aside .box-admin img {
   padding-top: 20px;
   color: rgb(4, 162, 4);
 }
+
 .icon-sosmed li{
 list-style: none;
 font-size: 25px;
@@ -451,11 +459,11 @@ transition: 1s;
 }
   /* AKHIR FOOTER */
 
-
 /* AKHIR UKURAN PC */
 
-/* AWAL UKURAN TABLET */
 
+
+/* AWAL UKURAN TABLET */
 
 @media screen and (max-width: 768px) {
     
@@ -473,8 +481,55 @@ transition: 1s;
 .logo img {
         z-index: 3;
     }
-.navigasi {
-  /* display: none; */
+
+
+
+.content-judul {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    
+}
+
+.menu-content {
+    flex: 1;
+    flex-direction: column;
+    width: fit-content;
+    
+}
+
+.content-description {
+  width: 60%;
+  text-align: center;
+}
+.content-description h1 {
+  font-size: 25px;
+
+}
+main .content-judul .menu-content .content-image {
+order: -1;
+}
+
+.judul-utama {
+    font-size: 2.5rem;
+    
+    max-width: 100%;
+  }
+
+.box1 {
+  flex-wrap: wrap;
+}
+
+}
+
+/* AKHIR UKURAN TABLET */
+
+
+/* AWAL UKURAN MOBILE */
+@media screen and (max-width: 425px) {
+
+
+  .navigasi {
     position: absolute;
     background-color: rgb(238, 237, 237);
     width: 100%;
@@ -500,6 +555,7 @@ transition: 1s;
 padding: 10px 25px ;
 }
 
+
 .nav-icon {
   z-index: 1000;
     font-size: 30px;
@@ -518,39 +574,13 @@ padding: 10px 25px ;
   opacity: 1;
 }
 
-.content-judul {
-    display: flex;
-    flex-direction: column;
-    height: 80vh;
-    
+
+.alur-kiri > img {
+    max-width: 200px;
 }
-
-.menu-content {
-    flex: 1;
-    flex-direction: column;
-    width: fit-content;
-    
-}
-.content-description h1 {
-  font-size: 30px;
-
-}
-main .content-judul .menu-content .content-image {
-order: -1;
-}
-
-.judul-utama {
-    font-size: 2.5rem;
-    
-    max-width: 100%;
-  }
-
-
-
-.box1 {
-  flex-wrap: wrap;
+.alur-kanan2 > img {
+    max-width: 200px;
 }
 
 }
-
-/* AKHIR UKURAN TABLET */
+/* AKHIR UKURAN MOBILE */
