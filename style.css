@@ -324,6 +324,7 @@ color: darkgreen;
     background: url(img/bg-judul.svg) no-repeat;
     background-size: cover;
     background-color: aliceblue;
+    padding-top: 3rem;
 }
 .article2 {
   text-align: center;
@@ -345,6 +346,7 @@ color: darkgreen;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
 }
 
   .syarat {
@@ -497,7 +499,8 @@ transition: 1s;
   /* AWAL FOOTER */
 
   footer {
-    background-color: rgb(236, 248, 236);
+    background-color:rgb(2, 128, 2);
+    color: white;
   }
 .copyright {
   text-align: center;
@@ -621,6 +624,12 @@ padding: 10px 25px ;
 
 .navigasi ul {
   opacity: 1;
+}
+
+.menu-content {
+  /* padding: 0 5%; */
+  justify-content: center;
+  gap: 1rem;
 }
 
 
