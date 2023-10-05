@@ -125,8 +125,18 @@ button{
   margin-top: 20px;
 }
 
+button:hover {
+  background-color: green;
+  transition: 1s;
+}
+
 button a {
   color: white;
+}
+
+button a:hover {
+  color: aliceblue;
+  transition: 1s;
 }
 
   @media screen and (max-width: 985px){
@@ -315,6 +325,13 @@ color: darkgreen;
     background-size: cover;
     background-color: aliceblue;
 }
+.article2 {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 @media screen and (max-width: 1024px) {
   .bg-article2 {
@@ -322,6 +339,14 @@ color: darkgreen;
     background-size: cover;
     background-color: aliceblue;
 }
+.article2 {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
   .syarat {
     flex-direction: column;
 
@@ -333,8 +358,11 @@ color: darkgreen;
   
 }
 
+h3 {
+  color: darkgreen;
+}
+
 .judul-syarat h2 {
-  margin-top: 10rem;
   padding-top: 2rem;
 }
 .syarat {
@@ -342,7 +370,7 @@ color: darkgreen;
   text-align: center;
   display: flex;
   gap: 3rem;
-  align-items: center;
+  align-items:flex-start;
   justify-content: center;
 }
 
@@ -371,12 +399,12 @@ color: darkgreen;
   display: block;
 }
 
-.box1 {
+.box1 img {
   width: 100px;
   height: 100px;
-  border-radius: 100px;
+  /* border-radius: 100px;
   margin: auto;
-  display: block;
+  display: block; */
   /* background-color: rgb(213, 85, 175); */
 }
 
@@ -424,6 +452,11 @@ aside .box-aside .box-admin img {
   margin: 30px 0 10px 0;
 }
 
+aside .box-aside .box-admin img:hover {
+
+transform: scale(1.1);
+transition: 1s;
+}
 .nama {
   color: green;
 }
@@ -469,8 +502,7 @@ transition: 1s;
 .copyright {
   text-align: center;
   width: 100%;
-  padding: 50px 0 50px 0;
-  margin-top: 5px;
+  padding: 40px 0 40px 0;
 }
   /* AKHIR FOOTER */
 
@@ -537,11 +569,13 @@ order: -1;
 
 }
 
+
+
 /* AKHIR UKURAN TABLET */
 
 
 /* AWAL UKURAN MOBILE */
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 426px) {
 
 
   .navigasi {
