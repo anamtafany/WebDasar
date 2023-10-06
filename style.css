@@ -333,7 +333,7 @@ h2 {
 
   .syarat {
     flex-wrap: wrap;
-    width: 600px;
+    /* width: 600px; */
   }
 }
 .judul-syarat {
@@ -598,11 +598,30 @@ footer {
     gap: 1rem;
   }
 
+  .content-description {
+    width: 80%;
+  }
+
+  .content-image img {
+    max-width: 150px;
+  }
+
+  .content-description h1 {
+    font-size: 20px;
+  }
+  .content-description p {
+    font-size: 15px;
+  }
+
+  .daftar {
+    width: 40vw;
+    font-size: 15px;
+  }
   .alur-kiri > img {
-    max-width: 200px;
+    max-width: 150px;
   }
   .alur-kanan2 > img {
-    max-width: 200px;
+    max-width: 150px;
   }
 
   .bg-article2 {
@@ -613,6 +632,15 @@ footer {
 
   .syarat {
     width: 100%;
+  }
+
+  .img-admin {
+    height: 150px;
+    width: 150px;
+  }
+
+  .copyright {
+    font-size: 10px;
   }
 }
 /* AKHIR UKURAN MOBILE */
